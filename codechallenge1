@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
+contract HelloWorld {
+    string public myFirst;
+    uint a;
+    int b;
+    bool c;
+    function set(string memory value1,uint value2,int value3,bool value4) public {
+        myFirst = value1;
+        a = value2;
+        b = value3;
+        c = value4;
+
+    }
+    function getS() public view returns(string memory)
+    {
+        return myFirst;
+    }
+    function getU() public view returns(uint)
+    {
+        return a;
+    }
+    function getI() public view returns(int)
+    {
+        return b;
+    }
+    function getB() public view returns(bool)
+    {
+        return c;
+    }
+
+}
+
